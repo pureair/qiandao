@@ -165,7 +165,7 @@ class MainWorker(object):
                     new_env['session'].to_json() if hasattr(new_env['session'], 'to_json') else new_env['session'])
 
             # todo next not mid night
-            next = time.time() + max((tpl['interval'] if tpl['interval'] else 24 * 60 * 60), 30*60)
+            next = time.time() + max((tpl['interval'] if tpl['interval'] else 24 * 60 * 60), 30*60) + random.choice((-1,1)) * (random.randint(1, 500) + random.randint(1, 500))
             if tpl['interval'] is None:
                 next = self.fix_next_time(next)
 
