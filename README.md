@@ -11,8 +11,8 @@ Web
 需要 python2.7, 虚拟主机无法安装
 
 ```
-apt-get install python-dev autoconf g++ python-pbkdf2
-pip install tornado u-msgpack-python jinja2 chardet requests pbkdf2 pycrypto
+apt-get install python-dev autoconf g++ python-pbkdf2 python-pip
+pip install tornado==4.5.3 u-msgpack-python jinja2 chardet requests pbkdf2 pycrypto singledispatch futures markupsafe umsgpack
 ```
 
 可选 redis, Mysql
