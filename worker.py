@@ -10,7 +10,8 @@ import datetime
 import logging
 import tornado.log
 import tornado.ioloop
-import random
+import random.choice
+import random.randint
 from tornado import gen
 
 import config
